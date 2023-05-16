@@ -4,23 +4,23 @@ import java.io.IOException;
 import javax.swing.*;
 import SideMenuPanel.SideMenuPanel;
 
-public class MainPage extends JPanel{
+public class MainPageView extends JPanel{
     
    //panel
-    protected JPanel panel,panel2, panel3, panel4, panel5, blank;
+    private JPanel panel,panel2, panel3, panel4, panel5, blank;
     
     //label
-    protected JLabel txt;
+    private JLabel txt;
     
     //button
-    protected JButton q;
+    private JButton q;
     
     //leftBar
-    protected LeftBar_2 leftBar;
+    private LeftBarView leftBar;
     
     //private SideMenuPanel sp;
     
-    public MainPage() throws IOException{
+    public MainPageView() throws IOException{
         
         //sp = new SideMenuPanel(this);
         panel = new JPanel();
@@ -30,8 +30,8 @@ public class MainPage extends JPanel{
         panel5 = new JPanel();
         
         txt = new JLabel("Welcome to JQUEUE");
-        q = new JButton("Enter");
-        leftBar = new LeftBar_2();
+        txt.setFont(new Font("FC Friday", Font.PLAIN, 50));
+        //q = new JButton("Enter");
         
         panel.setLayout(new GridBagLayout());
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -39,7 +39,7 @@ public class MainPage extends JPanel{
         
         panel2.setLayout(new GridBagLayout());
         panel2.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        panel2.add(q);
+        //panel2.add(q);
         
         panel3.setLayout(new GridBagLayout());
         panel3.add(panel4);
