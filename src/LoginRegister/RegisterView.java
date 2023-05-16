@@ -82,6 +82,7 @@ public class RegisterView implements ActionListener{
         back.setBounds(590, 700, 120, 40);
         back.setFont(new Font("Arial", Font.PLAIN, 15));
         
+        back.addActionListener(this);
         signin.addActionListener(this);
         
         fr.add(register);

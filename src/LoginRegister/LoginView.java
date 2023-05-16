@@ -131,7 +131,7 @@ public class LoginView implements ActionListener{
         }
         else if(e.getSource().equals(register)){
             fr.dispose();
-            new OLDRegisterView();
+            new RegisterView();
         }
         
         
